@@ -1,0 +1,36 @@
+.accent {
+	color: var(--target-blue);
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+	padding: 0 15px;
+}
+
+.list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.cart-section {
+	background: var(--section-witegrey);
+}
+
+.container-center {
+	text-align: center;
+	justify-content: center;
+}
+
+.hidden {
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+}
