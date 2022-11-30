@@ -5,34 +5,21 @@
 .section {
 	padding-top: 94px;
 	padding-bottom: 94px;
+	display: flex;
+	justify-items: center;
 }
 
 .container {
 	margin: 0 auto;
-	width: 1200px;
+	width: 480px;
 	padding: 0 15px;
-	@media screen and (min-widdth: $tabl_width) {
-		
+	@media screen and (min-width: $fone_width) {
+			width: $tabl_width;
 	}
-	@media screen and (min-widdth: $desktop_width) {
-		
+	@media screen and (min-width: $tabl_width) {
+		width: $desktop_width;
 	}
-		{
-		margin: 0 auto;
-		width: 1200px;
-		padding: 0 15px;
-	}
-	container {
-		margin: 0 auto;
-		width: 1200px;
-		padding: 0 15px;
-	}
-}
 
-.list {
-	list-style: none;
-	padding-left: 0;
-	margin: 0;
 }
 
 .cart-section {
