@@ -13,11 +13,12 @@
 	margin: 0 auto;
 	width: 480px;
 	padding: 0 15px;
-	@media screen and (min-width: $fone_width) {
+	@media screen and (min-width: $tabl_width) {
 			width: $tabl_width;
 	}
-	@media screen and (min-width: $tabl_width) {
+	@media screen and (min-width: $desktop_width) {
 		width: $desktop_width;
+	
 	}
 
 }
