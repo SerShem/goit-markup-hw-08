@@ -3,26 +3,30 @@
 }
 
 .section {
-	padding: 60px 0;
+	display: flex;
+	justify-items: center;
+	@media screen and (min-width: $tabl_width) {
+		width: $tabl_width;
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 	@media screen and (min-width: $desktop_width) {
-		padding: 94px 0;
-		display: flex;
-		justify-items: center;
-		
+		width: $desktop_width;
+		padding-top: 94px;
+		padding-bottom: 94px;
 	}
 }
 
 .container {
 	margin: 0 auto;
-	width: 480px;
+	width: $fone_width;
 	padding: 0 15px;
 	@media screen and (min-width: $tabl_width) {
-			width: $tabl_width;
+		width: $tabl_width;
 	}
 	@media screen and (min-width: $desktop_width) {
 		width: $desktop_width;
 	}
-
 }
 
 .cart-section {

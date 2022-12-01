@@ -153,7 +153,7 @@
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 
-	@media screen and (min-width: $tabl_width) {
+@media screen and (min-width: $tabl_width) and (max-width: $desktop_width)	{
 		width: calc($tabl_width / 2 - 30px);
 		margin-right: 30px;
 		margin-top: 0;
@@ -240,15 +240,22 @@
 .client-list {
 	display: flex;
 	justify-content: center;
-	gap: 30px;
 }
 
 .client__item {
 	height: 92px;
 	width: calc($fone_width / 2 - 30px);
+	margin-right: 30px;
+	margin-bottom: 30px;
+	&:nth-child(n+5) {
+		margin-bottom: 0;
+	}
+	&:nth-child(2n) {
+		margin-right: 0;
+	}
+	@media screen and (min-width: $tabl_width) {
 
-	@media screen and (min-width: $tabl_width) {}
-
+	}
 	@media screen and (min-width: $desktop_width) {}
 }
 
