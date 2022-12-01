@@ -3,10 +3,13 @@
 }
 
 .section {
-	padding-top: 94px;
-	padding-bottom: 94px;
-	display: flex;
-	justify-items: center;
+	padding: 60px 0;
+	@media screen and (min-width: $desktop_width) {
+		padding: 94px 0;
+		display: flex;
+		justify-items: center;
+		
+	}
 }
 
 .container {
@@ -18,7 +21,6 @@
 	}
 	@media screen and (min-width: $desktop_width) {
 		width: $desktop_width;
-	
 	}
 
 }
