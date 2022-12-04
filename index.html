@@ -57,6 +57,60 @@
 					</a>
 				</li>
 			</ul>
+			<button type="button" class="menu-open" data-menu-open>
+				<svg class="menu-icon" width="24px" height="16px">
+					<use href="/images/icons.svg#icon-menu"></use>
+				</svg>
+			</button>
+		</div>
+		<div class="mob-menu is-hidden" data-menu>
+			<div class="mob-menu__container">
+				<button type="button" class="menu-close" data-menu-close>
+					<svg class="menu-close__icon" width="19px" height="19px">
+						<use href="./images/icons.svg#icon-logo-exit"></use>
+					</svg>
+				</button>
+				<div class="mob-menu__top">
+					<ul class="mob-menu__list">
+						<li class="mob-menu__item">
+							<a class="mob-menu__link current" href="./index.html">Студія</a>
+						</li>
+						<li class="mob-menu__item">
+							<a class="mob-menu__link" href="./portfolio.html">Портфоліо</a>
+						</li>
+						<li class="mob-menu__item">
+							<a class="mob-menu__link" href="#">Контакти</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mob-menu__bottom">
+					<ul class="mob-connection">
+						<li class="mob-connection__item">
+							<a class="mob-connection__tel" href="tel:+380961111111">
+								+38 096 111 11 11</a>
+						</li>
+						<li class="mob-connection__item">
+							<a class="mob-connection__mail" href="mailto:info@devstudio.com">
+								info@devstudio.com
+							</a>
+						</li>
+					</ul>
+					<ul class="mob-social">
+						<li class="mob-social__item">
+							<a href="#" class="mob-social__link">Instagram</a>
+						</li>
+						<li class="mob-social__item">
+							<a href="#" class="mob-social__link">Twitter</a>
+						</li>
+						<li class="mob-social__item">
+							<a href="#" class="mob-social__link">Facebook</a>
+						</li>
+						<li class="mob-social__item">
+							<a href="#" class="mob-social__link">LinkedIn</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</header>
 	<main>
@@ -157,7 +211,18 @@
 				<h2 class="sections__titel">Наша команда</h2>
 				<ul class="container__list">
 					<li class="cart-section__item">
-						<img src="./images/team_ihor_d.jpg" alt="чоловік в окулярах на білому фоні">
+						<picture>
+							<source srcset="
+								./images/team_ihor_d.jpg 1x, 
+								./images/team_ihor_d-2x.jpg 2x" media="(min-width: 1200px)" />
+							<source srcset="
+								./images/team_ihor_d-tab.jpg 1x, 
+								./images/team_ihor_d-tab-2x.jpg 2x" media="(min-width: 768px)" />
+							<source srcset="
+								./images/team_ihor_d-mob.jpg 1x, 
+								./images/team_ihor_d-mob-2x.jpg 2x" media="(min-width: 320px)" />
+							<img src="./images/team_ihor_d.jpg" alt="чоловік в окулярах на білому фоні">
+						</picture>
 						<div class="cart-section__box">
 							<p class="cart-section__name">Ігор Дем'яненко</p>
 							<p class="cart-section__text">Product Designer</p>
@@ -195,7 +260,18 @@
 						</div>
 					</li>
 					<li class="cart-section__item">
-						<img src="./images/team_olga_r.jpg" alt="дівчина з світлим волоссям в окулярах на сірому фоні">
+						<picture>
+							<source srcset="
+								./images/team_olga_r.jpg 1x, 
+								./images/team_olga_r-2x.jpg 2x" media="(min-width: 1200px)" />
+							<source srcset="
+								./images/team_olga_r-tab.jpg 1x, 
+								./images/team_olga_r-tab-2x.jpg 2x" media="(min-width: 768px)" />
+							<source srcset="
+								./images/team_olga_r-mob.jpg 1x, 
+								./images/team_olga_r-mob-2x.jpg 2x" media="(min-width: 320px)" />
+							<img src="./images/team_olga_r.jpg" alt="дівчина з світлим волоссям в окулярах на сірому фоні">
+						</picture>
 						<div class="cart-section__box">
 							<p class="cart-section__name">Ольга Рєпіна</p>
 							<p class="cart-section__text">Frontend Developer</p>
@@ -233,7 +309,18 @@
 						</div>
 					</li>
 					<li class="cart-section__item">
-						<img src="./images/team_mikola_t.jpg" alt="чоловік в синій сорочті на блакиному фоні">
+						<picture>
+							<source srcset="
+								./images/team_mikola_t.jpg 1x, 
+								./images/team_mikola_t-2x.jpg 2x" media="(min-width: 1200px)" />
+							<source srcset="
+								./images/team_mikola_t-tab.jpg 1x, 
+								./images/team_mikola_t-tab-2x.jpg 2x" media="(min-width: 768px)" />
+							<source srcset="
+								./images/team_mikola_t-mob.jpg 1x, 
+								./images/team_mikola_t-mob-2x.jpg 2x" media="(min-width: 320px)" />
+							<img src="./images/team_mikola_t.jpg" alt="чоловік в синій сорочті на блакиному фоні">
+						</picture>
 						<div class="cart-section__box">
 							<p class="cart-section__name">Микола Тарасов</p>
 							<p class="cart-section__text">Marketing</p>
@@ -271,7 +358,18 @@
 						</div>
 					</li>
 					<li class="cart-section__item">
-						<img src="./images/team_mihail_y.jpg" alt="чоловік в окулярах в чорній сорочті на фоні білого будинку">
+						<picture>
+							<source srcset="
+								./images/team_mihail_y.jpg 1x, 
+								./images/team_mihail_y-2x.jpg 2x" media="(min-width: 1200px)" />
+							<source srcset="
+								./images/team_mihail_y-tab.jpg 1x, 
+								./images/team_mihail_y-tab-2x.jpg 2x" media="(min-width: 768px)" />
+							<source srcset="
+								./images/team_mihail_y-mob.jpg 1x, 
+								./images/team_mihail_y-mob-2x.jpg 2x" media="(min-width: 320px)" />
+							<img src="./images/team_mihail_y.jpg" alt="чоловік в окулярах в чорній сорочті на фоні білого будинку" />
+						</picture>
 						<div class="cart-section__box">
 							<p class="cart-section__name">Михайло Єрмаков</p>
 							<p class="cart-section__text">UI Designer</p>
@@ -424,7 +522,7 @@
 			<form class="footer-form">
 				<p class="footer-form__p">Підпишіться на розсилку</p>
 				<div class="footer-form__box">
-					<label for="sign_mail">
+					<label for="sign_mail" class="footer-form__label">
 						<input type="text" name="sign_for_mail" id="sign_mail" placeholder="E-mail" class="footer-form__input">
 					</label>
 					<button class="footer-form__button" type="submit">
@@ -440,7 +538,7 @@
 	<div class="backdrop is-hidden" data-modal>
 		<div class="backdrop-modal">
 			<button class="backdrop-modal__batton" data-modal-close>
-				<svg  width="24" height="24">
+				<svg width="24" height="24">
 					<use href="./images/icons.svg#icon-logo-exit"></use>
 				</svg>
 			</button>
@@ -488,6 +586,7 @@
 		</div>
 	</div>
 	<script src="./js/modal.js"></script>
+	<script src="./js/menu.js"></script>
 </body>
 
 </html>

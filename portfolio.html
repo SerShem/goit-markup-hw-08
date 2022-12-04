@@ -2,20 +2,20 @@
 <html lang="uk">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Портфоліо</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-  <link rel="stylesheet" href="./css/main.min.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Портфоліо</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+	<link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
-  <header class="header">
+	<header class="header">
 		<div class="container container__header">
 			<a href="./index.html" lang="en" class="logo">
 				<span class="accent">Web</span>Studio
@@ -57,36 +57,92 @@
 					</a>
 				</li>
 			</ul>
+			<button type="button" class="menu-open" data-menu-open>
+				<svg class="menu-icon" width="24px" height="16px">
+					<use href="/images/icons.svg#icon-menu"></use>
+				</svg>
+			</button>
+		</div>
+		<div class="mob-menu is-hidden" data-menu>
+			<div class="mob-menu__container">
+				<button type="button" class="menu-close" data-menu-close>
+					<svg class="menu-close__icon" width="19px" height="19px">
+						<use href="./images/icons.svg#icon-logo-exit"></use>
+					</svg>
+				</button>
+				<div class="mob-menu__top">
+					<ul class="mob-menu__list">
+						<li class="mob-menu__item">
+							<a class="mob-menu__link" href="./index.html">Студія</a>
+						</li>
+						<li class="mob-menu__item">
+							<a class="mob-menu__link current" href="./portfolio.html">Портфоліо</a>
+						</li>
+						<li class="mob-menu__item">
+							<a class="mob-menu__link" href="#">Контакти</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mob-menu__bottom">
+					<ul class="mob-connection">
+						<li class="mob-connection__item">
+							<a class="mob-connection__tel" href="tel:+380961111111">
+								+38 096 111 11 11</a>
+						</li>
+						<li class="mob-connection__item">
+							<a class="mob-connection__mail" href="mailto:info@devstudio.com">
+								info@devstudio.com
+							</a>
+						</li>
+					</ul>
+					<ul class="mob-social">
+						<li class="mob-social__item">
+							<a href="#" class="mob-social__link">Instagram</a>
+						</li>
+						<li class="mob-social__item">
+							<a href="#" class="mob-social__link">Twitter</a>
+						</li>
+						<li class="mob-social__item">
+							<a href="#" class="mob-social__link">Facebook</a>
+						</li>
+						<li class="mob-social__item">
+							<a href="#" class="mob-social__link">LinkedIn</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</header>
-  <main>
-    <section class="section">
-      <div class="container">
-        <h1 class="hidden"> Контент портфоліо</h1>
-        <ul class="portfolio-section__list">
-          <li class="portfolio-section__item">
-            <button type="button" class="portfolio-section__button">Усі</button>
-          </li>
-          <li class="portfolio-section__item">
-            <button type="button" class="portfolio-section__button">Веб-сайт</button>
-          </li>
-          <li class="portfolio-section__item">
-            <button type="button" class="portfolio-section__button">Додатки</button>
-          </li>
-          <li class="portfolio-section__item">
-            <button type="button" class="portfolio-section__button">Дизайн</button>
-          </li>
-          <li class="portfolio-section__item">
-            <button type="button" class="portfolio-section__button">Маркетинг</button>
-          </li>
-        </ul>
-        <ul class="portfolio-cart__list">
-          <li class="portfolio-cart__item">
+	<main>
+		<section class="section">
+			<div class="container">
+				<h1 class="hidden"> Контент портфоліо</h1>
+				<ul class="portfolio-section__list">
+					<li class="portfolio-section__item">
+						<button type="button" class="portfolio-section__button">Усі</button>
+					</li>
+					<li class="portfolio-section__item">
+						<button type="button" class="portfolio-section__button">Веб-сайт</button>
+					</li>
+					<li class="portfolio-section__item">
+						<button type="button" class="portfolio-section__button">Додатки</button>
+					</li>
+					<li class="portfolio-section__item">
+						<button type="button" class="portfolio-section__button">Дизайн</button>
+					</li>
+					<li class="portfolio-section__item">
+						<button type="button" class="portfolio-section__button">Маркетинг</button>
+					</li>
+				</ul>
+				<ul class="portfolio-cart__list">
+					<li class="portfolio-cart__item">
 						<a href="" class="portfolio-cart__link">
 							<div class="portfolio-cart__link--box">
 								<img src="./images/laptop.jpg" alt="ноутбук" width="370">
 								<div class="portfolio-cart__link--modal">
-									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем
+										функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+										приватну особу.</p>
 								</div>
 							</div>
 							<div class="portfolio-cart__box--content">
@@ -94,13 +150,15 @@
 								<p class="portfolio-cart__text">Веб-сайт</p>
 							</div>
 						</a>
-          </li>
-          <li class="portfolio-cart__item">
+					</li>
+					<li class="portfolio-cart__item">
 						<a href="" class="portfolio-cart__link">
 							<div class="portfolio-cart__link--box">
 								<img src="./images/two_basket_plaers.jpg" alt="двоє грають у баскетбол" width="370">
 								<div class="portfolio-cart__link--modal">
-									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем
+										функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+										приватну особу.</p>
 								</div>
 							</div>
 							<div class="portfolio-cart__box--content">
@@ -108,13 +166,15 @@
 								<p class="portfolio-cart__text">Дизайн</p>
 							</div>
 						</a>
-          </li>
-          <li class="portfolio-cart__item">
+					</li>
+					<li class="portfolio-cart__item">
 						<a href="" class="portfolio-cart__link">
 							<div class="portfolio-cart__link--box">
 								<img src="./images/seafood_rest.jpg" alt="логотип ресторану seafood" width="370">
 								<div class="portfolio-cart__link--modal">
-									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем
+										функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+										приватну особу.</p>
 								</div>
 							</div>
 							<div class="portfolio-cart__box--content">
@@ -122,13 +182,15 @@
 								<p class="portfolio-cart__text">Додаток</p>
 							</div>
 						</a>
-          </li>
-          <li class="portfolio-cart__item">
+					</li>
+					<li class="portfolio-cart__item">
 						<a href="" class="portfolio-cart__link">
 							<div class="portfolio-cart__link--box">
 								<img src="./images/haedfone.jpg" alt="haedfone" width="370">
 								<div class="portfolio-cart__link--modal">
-									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем
+										функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+										приватну особу.</p>
 								</div>
 							</div>
 							<div class="portfolio-cart__box--content">
@@ -136,13 +198,15 @@
 								<p class="portfolio-cart__text">Маркетинг</p>
 							</div>
 						</a>
-          </li>
-          <li class="portfolio-cart__item">
+					</li>
+					<li class="portfolio-cart__item">
 						<a href="" class="portfolio-cart__link">
 							<div class="portfolio-cart__link--box">
 								<img src="./images/two_box.jpg" alt="two box" width="370">
 								<div class="portfolio-cart__link--modal">
-									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем
+										функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+										приватну особу.</p>
 								</div>
 							</div>
 							<div class="portfolio-cart__box--content">
@@ -150,13 +214,15 @@
 								<p class="portfolio-cart__text">Додаток</p>
 							</div>
 						</a>
-          </li>
-          <li class="portfolio-cart__item">
+					</li>
+					<li class="portfolio-cart__item">
 						<a href="" class="portfolio-cart__link">
 							<div class="portfolio-cart__link--box">
 								<img src="./images/monitor.jpg" alt="monitor" width="370">
 								<div class="portfolio-cart__link--modal">
-									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем
+										функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+										приватну особу.</p>
 								</div>
 							</div>
 							<div class="portfolio-cart__box--content">
@@ -164,13 +230,15 @@
 								<p class="portfolio-cart__text">Веб-сайт</p>
 							</div>
 						</a>
-          </li>
-          <li class="portfolio-cart__item">
+					</li>
+					<li class="portfolio-cart__item">
 						<a href="" class="portfolio-cart__link">
 							<div class="portfolio-cart__link--box">
 								<img src="./images/open_book.jpg" alt="open book" width="370">
 								<div class="portfolio-cart__link--modal">
-									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем
+										функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+										приватну особу.</p>
 								</div>
 							</div>
 							<div class="portfolio-cart__box--content">
@@ -178,13 +246,15 @@
 								<p class="portfolio-cart__text">Дизайн</p>
 							</div>
 						</a>
-          </li>
-          <li class="portfolio-cart__item">
+					</li>
+					<li class="portfolio-cart__item">
 						<a href="" class="portfolio-cart__link">
 							<div class="portfolio-cart__link--box">
 								<img src="./images/badge_wite.jpg" alt="badge wite" width="370">
 								<div class="portfolio-cart__link--modal">
-									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем
+										функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+										приватну особу.</p>
 								</div>
 							</div>
 							<div class="portfolio-cart__box--content">
@@ -192,13 +262,15 @@
 								<p class="portfolio-cart__text">Маркетинг</p>
 							</div>
 						</a>
-          </li>
-          <li class="portfolio-cart__item">
+					</li>
+					<li class="portfolio-cart__item">
 						<a href="" class="portfolio-cart__link">
 							<div class="portfolio-cart__link--box">
 								<img src="./images/work_laptop.jpg" alt="work laptop" width="370">
 								<div class="portfolio-cart__link--modal">
-									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+									<p class="portfolio-cart__link--text">Ресурс пропонує комплексні пропозиції з різним рівнем
+										функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+										приватну особу.</p>
 								</div>
 							</div>
 							<div class="portfolio-cart__box--content">
@@ -206,11 +278,11 @@
 								<p class="portfolio-cart__text">Додаток</p>
 							</div>
 						</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
 	<footer class="footer-section">
 		<div class="container footer-container">
 			<div class="footer-address__box">
@@ -288,6 +360,7 @@
 		</div>
 	</footer>
 	<script src="./js/modal.js"></script>
+	<script src="./js/menu.js"></script>
 </body>
 
 </html>

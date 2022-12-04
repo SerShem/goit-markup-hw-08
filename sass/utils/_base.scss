@@ -5,10 +5,13 @@
 .section {
 	display: flex;
 	justify-items: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	width: $fone_width;
+	margin: auto;
+
 	@media screen and (min-width: $tabl_width) {
 		width: $tabl_width;
-		padding-top: 94px;
-		padding-bottom: 94px;
 	}
 	@media screen and (min-width: $desktop_width) {
 		width: $desktop_width;
