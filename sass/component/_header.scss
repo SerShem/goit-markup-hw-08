@@ -3,16 +3,15 @@
 }
 
 .container__header {
-	display: flex;
-	width: $fone_width;
 	height: 60px;
 	align-items: center;
-
+	padding: 0 15px;
+	
 	@media screen and (min-width: $tabl_width) {
-		width: $tabl_width;
 		height: 80px;
+		display: flex;
 	}
-
+	
 	@media screen and (min-width: $desktop_width) {
 		width: $desktop_width;
 	}
