@@ -21,9 +21,9 @@
 
 	@media screen and (max-width: calc($desktop_width - 1px)) {
 		width: 95%;
-		min-width: 450px;
+		max-width: 450px;
 		height: 95%;
-		min-height: 609px;
+		max-height: 609px;
 		overflow: scroll;
 	}
 

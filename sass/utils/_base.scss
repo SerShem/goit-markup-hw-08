@@ -10,10 +10,10 @@
 	margin: auto;
 
 	@media screen and (min-width: $tabl_width) {
-		width: $tabl_width;
+		/* width: $tabl_width; */
 	}
 	@media screen and (min-width: $desktop_width) {
-		width: $desktop_width;
+		/* width: $desktop_width; */
 		padding-top: 94px;
 		padding-bottom: 94px;
 	}
@@ -28,7 +28,6 @@
 	}
 	@media screen and (min-width: $tabl_width) {
 		width: $tabl_width;
-		margin: 0;
 	}
 	@media screen and (min-width: $desktop_width) {
 		width: $desktop_width;
